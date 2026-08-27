@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>For You♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PAGE 1 - WELCOME
+    ========================== -->
+
+    <section id="page1" class="page active">
+
+        <div class="container welcome">
+
+            <div class="big-heart">♡</div>
+
+            <p class="small-title">
+                SOMETHING 
+            </p>
+
+            <h1>For You, NurHananie Hafifah Binti Mohd Nahar ♡</h1>
+
+            <p>
+                BIDADARIKU
+            </p>
+
+            <button class="main-button" onclick="nextPage(2)">
+                Begin ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAGE 2 - OUR STORY
+    ========================== -->
+
+    <section id="page2" class="page">
+
+        <div class="container">
+
+            <p class="small-title"> CHAPTER ONE</p>
+
+            <h1>OUR STORY</h1>
+
+            <p>
+                I STILL REMEMBER THE FIRST TIME WE GETTING TO KNOW EACH OTHER 🤗
+            </p>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span class="date">
+                        23/3/2025
+                    </span>
+
+                    <h2>HOW IT ALL START</h2>
+
+                    <p>
+                        I still remember clearly on how i getting to know you. It all start from a game and here we are. I never imagine that I will closer to someone since i don't interact much with female except for work.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span class="date">
+                        4/5/2025
+                    </span>
+
+                    <h2>GETTING EACH OTHER TIKTOK</h2>
+
+                    <p>
+                        We decided to get each other sosmed as it easy to communicate outside the game. Well it cute though remembering how step by step we get to know each other until we get here😊
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span class="date">
+                        14/5/2025
+                    </span>
+
+                    <h2>WE START GETTING CLOSER</h2>
+
+                    <p>
+                        This is where everything shift, from friend in game into serious relationship. I never regret getting to know such a kind and beautiful soul like you❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button class="main-button" onclick="nextPage(3)">
+                Continue →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAGE 3 - PHOTO ALBUM
+    ========================== -->
+
+    <section id="page3" class="page">
+
+        <div class="container">
+
+            <p class="small-title">CHAPTER TWO</p>
+
+            <h1>Our Little Album 📸</h1>
+
+            <p>
+                DO YOU STILL REMEMBER ALL OF THIS SAYANGG?
+            </p>
+
+
+            <div class="album">
+
+
+                <!-- PHOTO 1 -->
+
+                <div class="photo-card"
+                     onclick="openPhoto('images/photo1.jpg',
+                     'Memory 1',
+                     'WRITE YOUR CAPTION HERE')">
+
+                    <img src="photo1.jpg">
+
+                    <div class="photo-info">
+
+                        <h3>Memory 1</h3>
+
+                        <p>
+                            DISCORD
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 2 -->
+
+                <div class="photo-card"
+                     onclick="openPhoto('images/photo2.jpg',
+                     'Memory 2',
+                     'WRITE YOUR CAPTION HERE')">
+
+                    <img src="photo2.jpg">
+
+                    <div class="photo-info">
+
+                        <h3>Memory 2</h3>
+
+                        <p>
+                            TIKTOK
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 3 -->
+
+                <div class="photo-card"
+                     onclick="openPhoto('images/photo3.jpg',
+                     'Memory 3',
+                     'WRITE YOUR CAPTION HERE')">
+
+                    <img src="photo3.jpg">
+
+                    <div class="photo-info">
+
+                        <h3>Memory 3</h3>
+
+                        <p>
+                            PLAY TOGETHER
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 4 -->
+
+                <div class="photo-card"
+                     onclick="openPhoto('images/photo4.jpg',
+                     'Memory 4',
+                     'WRITE YOUR CAPTION HERE')">
+
+                    <img src="photo4.jpg">
+
+                    <div class="photo-info">
+
+                        <h3>Memory 4</h3>
+
+                        <p>
+                            THE 1ST PICTURE YOU GIVE ME
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 5 -->
+
+                <div class="photo-card"
+                     onclick="openPhoto('images/photo5.jpg',
+                     'Memory 5',
+                     'WRITE YOUR CAPTION HERE')">
+
+                    <img src="photo5.jpg">
+
+                    <div class="photo-info">
+
+                        <h3>Memory 5</h3>
+
+                        <p>
+                            ONCE UPON A TIME, I BECOME AN INTERN🤣
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHOTO 6 -->
+
+                <div class="photo-card"
+                     onclick="openPhoto('images/photo6.jpg',
+                     'Memory 6',
+                     'WRITE YOUR CAPTION HERE')">
+
+                    <img src="photo6.jpg">
+
+                    <div class="photo-info">
+
+                        <h3>Memory 6</h3>
+
+                        <p>
+                            I WANT TO KNOW YOU BETTER
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="main-button" onclick="nextPage(4)">
+                Continue →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PHOTO POPUP -->
+
+    <div id="photoModal" class="photo-modal">
+
+        <div class="modal-content">
+
+            <button class="close-button"
+                    onclick="closePhoto()">
+                ×
+            </button>
+
+            <img id="modalImage">
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalCaption"></p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         PAGE 4 - APPRECIATION
+    ========================== -->
+
+    <section id="page4" class="page">
+
+        <div class="container">
+
+            <p class="small-title">CHAPTER THREE</p>
+
+            <h1>Things I Appreciate About You 🌷</h1>
+
+            <p>
+                BIDADARI KESAYANGAN SAYA🤗
+            </p>
+
+
+            <div class="appreciation">
+
+
+                <div class="app-card"
+                     onclick="showMessage(this)">
+
+                    <div class="question-mark">♡</div>
+
+                    <p>Tap me</p>
+
+                    <div class="hidden-message">
+                        KESABARAN SAYANGG
+                    </div>
+
+                </div>
+
+
+                <div class="app-card"
+                     onclick="showMessage(this)">
+
+                    <div class="question-mark">♡</div>
+
+                    <p>Tap me</p>
+
+                    <div class="hidden-message">
+                        BILA SAYANGG MINTA SOMETHING DARI SAYA (NOT EVERYDAY FOR SURE YAA)
+                    </div>
+
+                </div>
+
+
+                <div class="app-card"
+                     onclick="showMessage(this)">
+
+                    <div class="question-mark">♡</div>
+
+                    <p>Tap me</p>
+
+                    <div class="hidden-message">
+                        BILA SAYANGG MANJA NGAN SAYA🤗
+                    </div>
+
+                </div>
+
+
+                <div class="app-card"
+                     onclick="showMessage(this)">
+
+                    <div class="question-mark">♡</div>
+
+                    <p>Tap me</p>
+
+                    <div class="hidden-message">
+                        BERI SAYA PELUANG UNTUK JADI BETTER WAKTU MULA2 KENAL
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="main-button"
+                    onclick="nextPage(5)">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAGE 5 - LETTER
+    ========================== -->
+
+    <section id="page5" class="page">
+
+        <div class="container">
+
+            <p class="small-title">CHAPTER FOUR</p>
+
+            <h1>A Letter For You 💌</h1>
+
+
+            <div id="letterStart">
+
+                <p>
+                    BIDADARII KU
+                </p>
+
+                <button class="main-button"
+                        onclick="startLetter()">
+
+                    Open the Letter 💌
+
+                </button>
+
+            </div>
+
+
+            <div id="letter" class="letter"></div>
+
+
+            <button id="letterNext"
+                    class="main-button"
+                    onclick="nextPage(6)"
+                    style="display:none;">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAGE 6 - QUESTION
+    ========================== -->
+
+    <section id="page6" class="page">
+
+        <div class="container">
+
+            <p class="small-title">CHAPTER FIVE</p>
+
+            <h1>One Question... 💕</h1>
+
+            <p>
+                SUDIKAH SAYANGG KALAU SAYA NAK BAWA RELATIONSHIP KITA NI KE ARAH YANG BAIK UNTUK DUNIA & AKHIRAT KITA? 
+            </p>
+
+
+            <button class="main-button"
+                    onclick="answerYes()">
+
+                YES ❤️
+
+            </button>
+
+
+            <button class="main-button"
+                    onclick="answerNo()">
+
+                NO
+
+            </button>
+
+
+            <p id="answer"></p>
+
+
+            <button id="questionNext"
+                    class="main-button"
+                    onclick="nextPage(7)"
+                    style="display:none;">
+
+                One Last Thing →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAGE 7 - FINAL SURPRISE
+    ========================== -->
+
+    <section id="page7" class="page">
+
+        <div class="container final-page">
+
+            <div class="big-heart">
+                ♡
+            </div>
+
+            <p class="small-title">
+                THE FINAL CHAPTER
+            </p>
+
+            <h1>One Last Thing...</h1>
+
+            <p>
+                BACAAA
+            </p>
+
+
+            <button class="main-button"
+                    onclick="showSurprise()">
+
+                Open It ♡
+
+            </button>
+
+
+            <div id="surprise" class="surprise">
+
+                <div class="big-heart">
+                    ♡
+                </div>
+
+                <h2>
+                    SELAMANYA KAMU BIDADARI SAYA YANG SATU-SATUNYA❤️
+                </h2>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
